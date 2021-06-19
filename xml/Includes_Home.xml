@@ -412,7 +412,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="WidgetListPosterNoEnd">
 		<definition>
 			<include content="CategoryLabel">
@@ -461,7 +460,6 @@
 			</control>
 		</definition>
 	</include>
-
 	<include name="MovieSubmenuItems">
 		<content>
 			<item>
