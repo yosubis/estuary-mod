@@ -412,6 +412,56 @@
 			</control>
 		</definition>
 	</include>
+
+	<include name="WidgetListPosterNoEnd">
+		<definition>
+			<include content="CategoryLabel">
+				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="250"/>
+			</include>
+			<control type="panel" id="$PARAM[list_id]">
+				<left>0</left>
+				<top>115</top>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<right>0</right>
+				<height>503</height>
+				<include content="WidgetListCommon">
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+				<itemlayout width="310" height="486">
+					<control type="group">
+						<left>68</left>
+						<top>10</top>
+						<include content="InfoWallMovieLayout">
+							<param name="focused" value="false" />
+						</include>
+					</control>
+				</itemlayout>
+				<focusedlayout width="310" height="486">
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<left>68</left>
+						<top>10</top>
+						<animation type="Focus">
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,130" />
+						</animation>
+						<animation type="Unfocus">
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,130" />
+						</animation>
+						<include content="InfoWallMovieLayout">
+							<param name="focused" value="true" />
+						</include>
+					</control>
+				</focusedlayout>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]">$PARAM[content_path]</content>
+			</control>
+		</definition>
+	</include>
+
 	<include name="MovieSubmenuItems">
 		<content>
 			<item>
