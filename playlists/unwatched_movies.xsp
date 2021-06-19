@@ -6,6 +6,7 @@
         <value>0</value>
     </rule>
     <!--<limit>15</limit>-->
-    <group mixed="Enabled">sets</group>
+    <group>sets</group>
+    <mixed>enabled</mixed>
     <order direction="descending">title</order>
 </smartplaylist>
