@@ -1,3 +1,7 @@
+[B]0.8.6[/B]
+• Updated Movies home screen
+• Updated skin name
+
 [B]0.8.5[/B]
 • Updated language files from Transifex
 
