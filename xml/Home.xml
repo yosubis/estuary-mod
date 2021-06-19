@@ -1062,7 +1062,7 @@
 						<param name="icon" value="icons/settings.png" />
 						<param name="label" value="$LOCALIZE[21417]" />
 					</include>
-					<include content="IconButton">
+					<include content="IconButton" condition="!Skin.HasSetting(kiosk_mode)">
 						<param name="control_id" value="801" />
 						<param name="onclick" value="ActivateWindow(1107)" />
 						<param name="icon" value="icons/search.png" />
