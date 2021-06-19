@@ -5,6 +5,7 @@
     <rule field="playcount" operator="is">
         <value>0</value>
     </rule>
-    <limit>15</limit>
-    <order direction="descending">random</order>
+    <!--<limit>15</limit>-->
+    <group>sets</group>
+    <order direction="descending">title</order>
 </smartplaylist>
