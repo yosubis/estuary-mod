@@ -112,10 +112,10 @@
 				<bottom>20</bottom>
 				<width>500</width>
 				<height>130</height>
-				<label>$LOCALIZE[31072]</label>
+				<label>$LOCALIZE[13012]</label>
 				<font>font12</font>
 				<align>center</align>
-				<onclick>ActivateWindow(ShutdownMenu)</onclick>
+				<onclick>Quit()</onclick>
 				<onleft>52</onleft>
 				<onright>52</onright>
 				<onup>52</onup>
