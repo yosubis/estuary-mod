@@ -1062,7 +1062,7 @@
 						<param name="icon" value="icons/power.png" />
 						<param name="label" value="$LOCALIZE[33060]" />
 					</include>
-					<include content="IconButton" condition="!System.HasLoginScreen | Integer.IsEqual(System.ProfileCount,1)">
+					<include content="IconButton" condition="!System.HasLoginScreen + Integer.IsEqual(System.ProfileCount,1)">
 						<param name="control_id" value="804" />
 						<param name="onclick" value="Quit()" />
 						<param name="icon" value="icons/power.png" />
