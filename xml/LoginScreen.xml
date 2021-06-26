@@ -124,6 +124,6 @@
 				<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
 			</control>
 		</control>
-		<include>TopBar</include>
+		<include>TopBarLoginScreen</include>
 	</controls>
 </window>
